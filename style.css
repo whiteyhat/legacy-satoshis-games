@@ -1,0 +1,399 @@
+/* My Style Library */
+@font-face {
+    font-family: "Google Display Font";
+    src: url("https://fonts.gstatic.com/s/googlesansdisplay/v5/ea8FacM9Wef3EJPWRrHjgE4B6CnlZxHVDv79pw.woff")
+      format("woff");
+  }
+  #areaone {
+    display: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row: 2;
+    padding: 10px;
+    height: 40%;
+    width: 60%;
+  }
+  
+  #logo{
+    height: 100px; 
+    width: auto; 
+  }
+  
+  p,{
+    font-family: "Google Display Font";
+    src: url("https://fonts.gstatic.com/s/googlesansdisplay/v5/ea8FacM9Wef3EJPWRrHjgE4B6CnlZxHVDv79pw.woff")
+      format("woff");
+      font-size: 17px;
+  }
+  
+  
+  a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: gold;
+  }
+  .grid-item {
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  img:hover {
+    opacity: 1;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+  }
+  .container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    margin-top: 3%;
+    position: absolute;
+    text-align: justify;
+    width: 65%;
+    height: 60%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  
+  .container:hover .image {
+    opacity: 0.1;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  #startpro{
+    font-family:  "Google Display Font";
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    text-align: center;
+  }
+  .text {
+    font-family:  "Google Display Font";
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 16px;
+    text-align: center;
+    margin-left: 2.5%;
+  }
+  
+  #buttonarea{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  #p4{
+    margin-left: 5%;
+  }
+  
+  html{
+    overflow-x: hidden;
+    position: relative;
+  
+  }
+  .grid2x2 {
+    min-height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .grid2x2 > div {
+    display: flex;
+    flex-basis: calc(50% - 40px);
+    justify-content: center;
+    flex-direction: column;
+  }
+  .grid2x2 > div > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .box {
+     margin: 10px;
+     margin-left:23px;
+    }
+  
+  .box1, .box2, .box3, .box4 {
+   height: 50px;
+    width: 100px;
+  }
+  .box1:hover, .box2:hover, .box3:hover, .box4:hover {
+  
+  }
+  
+  
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+  
+  }
+  /* The Modal (background) */
+  .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+      position: relative;
+      background-color: #fefefe;
+      margin: auto;
+      padding: 0;
+      border: 1px solid #888;
+      width: 40%;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+      -webkit-animation-name: animatetop;
+      -webkit-animation-duration: 0.4s;
+      animation-name: animatetop;
+      animation-duration: 0.4s;
+      max-height: 85%;
+       overflow-y: auto;
+       bottom: 5%;
+    
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+      from {top:-400px; opacity:0} 
+      to {top:-5%; opacity:1}
+  }
+  
+  @keyframes animatetop {
+      from {top:-400px; opacity:0}
+      to {top:-5%; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+      color: white;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+  .modal-header {
+      padding: 2px 16px;
+      background-color: lightblue;
+      color: white;
+  }
+  
+  .modal-body {
+    padding: 2px 16px;
+  }
+  .qr-code {
+    width: 200px;
+    margin: 10px;
+  }
+  .modal-footer {
+      padding: 2px 16px;
+      background-color: lightblue;
+      color: white;
+  }
+  
+  .top {
+    margin: 0;
+    padding: 0;
+    border-radius: 3px;
+    font-weight: 700;
+    height: 70px;
+    margin-left: 25%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-family: "Google Display Font";
+    border-bottom: 1px solid #888;
+    background: lightblue;
+  
+  }
+  
+  h1{
+    font-family: "Google Display Font";
+    font-size: 60px
+  }
+  
+  #myProgress {
+    width: 100%;
+    background-color: grey;
+  }
+  #myBar {
+    width: 0.3%;
+    height: 50px;
+    background-color: green;
+  }
+  #mobile{
+    display: none;
+  }
+  
+  @media only screen and (max-width: 1080px) {
+    #web{
+      display: none;
+      width: 100%;
+    }
+    #mobile{
+      display: block;
+      width: 100%;
+    }
+    h1{
+      font-family: "Google Display Font";
+      font-size: 25px
+    }
+  .grid-item {
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+    text-align: center;
+    width: 150px;
+    height: auto;
+  }
+  
+  img:hover {
+    opacity: 1;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+    outline-style: solid;
+    outline-offset: 13px;
+    outline-color: #4caf50;
+    outline-width: 5px;
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+  }
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+   pointer-events: all;
+   cursor: auto;
+
+  }
+
+  .middle {
+    margin-top: 22%;
+    width: 95%;
+    height: auto;
+    font-size: 12spx;
+    font-family:  "Google Display Font";
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+  }
+  #areaone {
+    margin-right: 32%;
+    grid-template-columns: auto auto;
+  }
+  .top {
+    margin: 0;
+    padding-right: 0;
+    border-radius: 3px;
+    font-weight: 700;
+    height: auto;
+    width: 96.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-family: "Google Display Font";
+    border-bottom: 1px solid #888;
+    background: lightblue;
+
+  }
+
+  #logo{
+    height: 40px;
+    width: auto;
+    margin-top: 10px;
+  }
+  #startpro{
+    font-family: "Google Display Font";
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    padding: 16px 32px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+  }
+  .text {
+    font-family: "Google Display Font";
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    padding: 12px 12px;
+    pointer-events: all;
+    cursor: auto;
+  }
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 2%;
+    border: 1px solid #888;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    max-height: 85%;
+     overflow-y: auto;
+     bottom: 5%;
+  }
+  body {
+    width: 100%;
+  }
+  }
